@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Ubuntu&display=swap" rel="stylesheet">
+
+  <title><%= htmlWebpackPlugin.options.title %></title>
+
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-color: #fa8900;
+    }
+
+    #app {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fa8900;
+    }
+
+    table.darkTable {
+      font-family: "Source Sans Pro", Gadget, sans-serif;
+      background-color: #be6900;
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      border-collapse: collapse;
+    }
+
+    table.darkTable td,
+    table.darkTable th {
+      padding: 3px 2px;
+    }
+
+    table.darkTable tbody td {
+      font-size: 13px;
+      color: #E6E6E6;
+    }
+
+    table.darkTable tr:nth-child(even) {
+      background: #ce7100;
+    }
+
+    table.darkTable thead {
+      background: #be6900;
+      border-bottom: 0.5px solid #FFFFFF;
+    }
+
+    table.darkTable thead th {
+      font-size: 15px;
+      font-weight: bold;
+      color: #E6E6E6;
+      text-align: center;
+    }
+
+    table.darkTable tfoot td {
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div id="display-container"></div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+{
+    "name": "JotForm Mock Data Generator",
+    "author": "Fikret Şengül",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "It is an extension which analyze form inputs and generate realistic mock data from mockaroo.",
+    "icons": {
+        "16": "assets/icons/icon-16.png",
+        "128": "assets/icons/icon-128.png"
+    },
+    "default_locale": "en",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content/content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background/background.js",
+            "hotreload/hotreload.js"
+        ],
+        "persistent": true
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "options_ui": {
+        "page": "options/index.html"
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "assets/icons/icon-19.png",
+            "38": "assets/icons/icon-38.png"
+        },
+        "default_title": "JotForm Mock Data Generator",
+        "default_popup": "popup/index.html"
+    }
+}
