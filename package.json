@@ -15,7 +15,7 @@
     "@babel/preset-env": "^7.0.0-beta.49",
     "@babel/preset-react": "^7.0.0-beta.49",
     "@emotion/core": "^10.0.14",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "babel-loader": "^8.0.0-beta.3",
     "chai": "^4.1.2",
     "clean-webpack-plugin": "^3.0.0",
